@@ -1,9 +1,23 @@
 public class TestaFuncionario {
-    public static void main(String[] args){
-        Funcionario meiokilo1 = new Funcionario();
-        meiokilo1.setCpf("318.093.555-98");
-        meiokilo1.setNome(João Grande);
-        meiokilo1.setSalario(200);
 
-        System.out.println(meiokilo1.getNome());
-        
+    public static void main(String[] args) {
+        Funcionario meiokiloi = new Funcionario();
+
+        meiokiloi.setCpf("318.893.555-90");
+        meiokiloi.setNome("João Grande");
+        meiokiloi.setSalario(200.0);
+
+       
+        Gerente Marosco = new Gerente();
+        Marosco.setCpf("263.959.123");
+        Marosco.setNome("Jadir");
+        Marosco.setSalario(501.0);
+        Marosco.setTipo(1);
+        Marosco.setSenha(14378); 
+
+        System.out.println("Nome: " + meiokiloi.getNome());
+        System.out.println("O cpf é: " + meiokiloi.getCpf());
+        System.out.println("O salário é: " + meiokiloi.getSalario());
+        System.out.println("A Bonificação é: " + meiokiloi.getBonificacao());
+    }
+}
